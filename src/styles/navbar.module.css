@@ -1,0 +1,17 @@
+.navbar {
+    background-color: transparent;
+    background-image: url("/images/space.gif");
+    padding: 30px 70px;
+    border-bottom: 1px solid #fff;
+}
+
+.navbarList {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.navbarList li a {
+    color: #fff;
+}
