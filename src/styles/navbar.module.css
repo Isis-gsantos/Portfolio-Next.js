@@ -2,16 +2,29 @@
     background-color: transparent;
     background-image: url("/images/space.gif");
     padding: 30px 70px;
-    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbarList {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     gap: 30px;
 }
 
 .navbarList li a {
     color: #fff;
+}
+
+.languageSelect {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 20px;
+    max-width: 150px;
+    background-color: #8a8a8a;
+    color: #fff;
+    font-weight: 600;
 }

@@ -1,5 +1,10 @@
 {
     "typing_phrase_1": "Olá! Eu sou Isis Gonçalves Santos",
-    "typing_phrase_2": "Sou Desenvolvedora Frontend"
+    "typing_phrase_2": "Sou Desenvolvedora Frontend",
+    "Navbar": {
+      "about": "Sobre",
+      "projects": "Projetos",
+      "contact": "Contato"
+    }
   }
   
