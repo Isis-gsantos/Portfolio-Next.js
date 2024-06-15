@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link";
-import styles from "../styles/navbar.module.css";
+import styles from "@/styles/navbar.module.css";
 import { useLocale, useTranslations } from 'next-intl';
 import { ChangeEvent } from "react";
 import { useRouter } from "next/navigation"
@@ -23,7 +23,7 @@ export default function Navbar() {
                 <ul className={styles.navbarList}>
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/about">{t("Navbar.about")}</Link></li>
-                    <li><Link href="">Skills</Link></li>
+                    <li><Link href="/skills">Skills</Link></li>
                     <li><Link href="">{t("Navbar.projects")}</Link></li>
                     <li><Link href="">{t("Navbar.contact")}</Link></li>
                 </ul>

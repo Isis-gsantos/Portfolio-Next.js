@@ -1,0 +1,36 @@
+.skills {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    gap: 5.5em;
+}
+
+.skills_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.skills_list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills_list h3 {
+    font-weight: 400;
+}
+
+.skills_list svg {
+    transition: .4s ease-in-out;
+}
+
+.skills_list svg:hover {
+    transform: scale(1.3);
+}
