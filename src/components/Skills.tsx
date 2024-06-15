@@ -2,6 +2,7 @@ import { FaHtml5, FaCss3Alt, FaSass, FaReact, FaNodeJs, FaBootstrap, FaGithub } 
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript, SiMysql } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import { CiCloudOn } from "react-icons/ci";
 import styles from "@/styles/skills.module.css"
 
 export default function Skills() {
@@ -62,6 +63,11 @@ export default function Skills() {
                 <li>
                     <FaGithub style={{color: "#9102de", fontSize: "50px"}} />
                     <h3>Git | GitHub</h3>
+                </li>
+
+                <li>
+                    <CiCloudOn />
+                    <h3>API Rest</h3>
                 </li>
             </ul>
         </section>

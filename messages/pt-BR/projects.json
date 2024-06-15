@@ -1,0 +1,10 @@
+{
+    "title": "Projetos",
+    "link": "Link do Projeto",
+    "DigitalHub": "DigitalHub Store é um e-commerce fictício de produtos eletrônicos. Oferece navegação intuitiva, permitindo explorar o catálogo, favoritar itens e adicioná-los ao carrinho de compras, ajustando quantidades e recebendo notificações instantâneas.",
+    "ScienceBlog": "ScienceBlog é uma atualização do projeto News-Project-React, usando Node.js e MySQL com Express e Sequelize. O site permite criar e vincular categorias e artigos, com campos para título, imagem, texto e categoria. Imagens são enviadas via Multer. A página inicial exibe os artigos e suas páginas individuais.",
+    "FoodDev": "O projeto é sobre um site para um restaurante fictício, com um layout visualmente agradável, que permite o usuário visualizar o catálogo e realizar uma compra. Nesse projeto explorei os recursos do JavaScript, incluindo um carrossel de imagem, catálogo dinâmico e validação de formulário.",
+    "ReactForm": "O projeto utiliza React e React-Hook-Form para criar um formulário simples e iterativo com campos para nome, sobrenome, e-mail e senha. Demonstra o uso de hooks para gerenciamento de estado, validação e submissão, além de ser responsivo a todos os tamanhos de tela.",
+    "BookAPI": "Este projeto é uma API Rest para gerenciamento de livros, usando Node.js, Express e Sequelize com um banco de dados MySQL. A API permite operações CRUD em registros de livros, incluindo ID, título, autor, imagem, preço e sinopse. Imagens foram inicialmente carregadas por upload de arquivos, depois por links.",
+    "GithubAPI": "O projeto é resultado de um desafio do curso DevQuest de desenvolvimento front-end, no módulo de JavaScript avançado. Através de um campo de busca, insere-se o nome do usuário para consultar o perfil no GitHub, acionando a busca ao clicar no botão ou pressionar 'Enter'."
+}

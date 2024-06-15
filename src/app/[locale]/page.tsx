@@ -3,6 +3,7 @@ import TypingAnimation from "@/components/TypingAnimation";
 import styles from "@/styles/page.module.css"
 import About from '@/components/About';
 import Skills from '@/components/Skills';
+import Projects from '@/components/Projects';
  
 export default function Index() {
   return (
@@ -12,6 +13,7 @@ export default function Index() {
       </section>
       <About />
       <Skills />
+      <Projects />
     </>
   );
 }

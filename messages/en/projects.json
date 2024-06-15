@@ -1,0 +1,10 @@
+{
+    "title": "Projects",
+    "link": "Project Link",
+    "DigitalHub": "DigitalHub Store is a fictional e-commerce specializing in electronic products. It offers an intuitive browsing experience, allowing users to explore the catalog, favorite items, and add them to the shopping cart, adjusting quantities and receiving instant notifications.",
+    "ScienceBlog": "ScienceBlog is an update of the News-Project-React, using Node.js and MySQL with Express and Sequelize. The site allows the creation and linking of categories and articles, with fields for title, image, text, and category. Images are uploaded via Multer. The homepage displays articles and their individual pages.",
+    "FoodDev": "The project is about a website for a fictional restaurant, featuring a visually appealing layout that allows users to browse the catalog and make a purchase. In this project, I explored JavaScript features, including an image carousel, dynamic catalog, and form validation.",
+    "ReactForm": "The project uses React and React-Hook-Form to create a simple and interactive form with fields for name, surname, email, and password. It demonstrates the use of hooks for state management, validation, and form submission, and is responsive to all screen sizes.",
+    "BookAPI": "This project is a Rest API for book management, created using Node.js, Express, and Sequelize with a MySQL database. The API allows CRUD operations on book records, including ID, title, author, image, price, and synopsis. Initially, images were uploaded via files, but later through links.",
+    "GithubAPI": "The project is the result of a challenge from the DevQuest front-end development course, in the advanced JavaScript module. Users can enter a username in the search field to look up a GitHub profile, initiating the search by clicking the button or pressing 'Enter'."
+}

@@ -9,15 +9,15 @@
 
   .about_me div {
     display: flex;
-    gap: 100px;
+    /* gap: 100px; */
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 40px 0 30px;
   }
   
   .about_me p {
     max-width: 45%;
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: 500;
     white-space: pre-wrap;
   }

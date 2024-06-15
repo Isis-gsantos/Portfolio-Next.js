@@ -8,7 +8,7 @@ export default function About() {
         <section className={styles.about_me}>
             <h2>{t("title")}</h2>
 
-            <div className="description">
+            <div>
                 <img className={styles.profile} src="/images/me.png" alt="me" />
                 <p>{t("description")}</p>
             </div>
