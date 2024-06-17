@@ -1,5 +1,7 @@
 import styles from "@/styles/about.module.css";
 import { useTranslations } from 'next-intl';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 export default function About() {
     const t = useTranslations("about");
@@ -8,9 +10,15 @@ export default function About() {
         <section className={styles.about_me}>
             <h2>{t("title")}</h2>
 
-            <div>
+            <div className={styles.content}>
                 <img className={styles.profile} src="/images/me.png" alt="me" />
-                <p>{t("description")}</p>
+                <p>
+                    {t("description")} <br></br>
+                    <span>
+                        <Link href="https://github.com/Isis-gsantos"><FaGithub /></Link>
+                        <Link href="https://www.linkedin.com/in/isis-goncalves-santos/"><FaLinkedin /></Link>
+                    </span>
+                </p> 
             </div>
         </section>
     )

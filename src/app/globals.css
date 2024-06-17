@@ -6,10 +6,16 @@
   list-style: none;
   text-decoration: none;
   font-family: "Saira", sans-serif;
+  outline: none;
+  border: none;
 }
 
 body {
   background-color: #f7f7f7;
+}
+
+a {
+  color: #000000;
 }
 
 h2 {
@@ -21,6 +27,22 @@ h2 {
   &:hover {
     color: #ccc;
   }
+}
+
+button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 20px;
+  background-color: #8a8a8a;
+  color: #fff;
+  font-weight: 300;
+  border: none;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+      background-color: #a7a0a0;
+    }
 }
 
 /*   

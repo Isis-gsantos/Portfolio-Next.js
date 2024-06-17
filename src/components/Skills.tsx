@@ -66,7 +66,7 @@ export default function Skills() {
                 </li>
 
                 <li>
-                    <CiCloudOn />
+                    <CiCloudOn style={{color: "#34a0a4", fontSize: "50px"}} />
                     <h3>API Rest</h3>
                 </li>
             </ul>
