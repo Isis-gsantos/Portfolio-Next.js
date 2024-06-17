@@ -1,0 +1,14 @@
+.themeToggle {
+    padding: 2px 5px;
+    border-radius: 50%;
+    background-color: #8a8a8a;
+    color: #fff;
+    font-size: 1.2em;
+    display: inline-block;
+    transition: .3s ease-in-out;
+  }
+  
+  .themeToggle:hover {
+    background-color: #a7a0a0;
+  }
+  

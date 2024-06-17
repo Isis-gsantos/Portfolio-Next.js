@@ -4,6 +4,7 @@ import styles from "@/styles/navbar.module.css";
 import { useLocale, useTranslations } from 'next-intl';
 import { ChangeEvent } from "react";
 import { useRouter } from "next/navigation";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Navbar() {
     const t = useTranslations("home");
@@ -18,8 +19,8 @@ export default function Navbar() {
     return (
         <>
             <section className={styles.navbar}>
-                <h2>Isis G Santos</h2>
-                            
+                <ThemeToggle />
+
                 <ul className={styles.navbarList}>
                     <li><Link href="/" locale={localActive}>Home</Link></li>
                     <li><Link href="/about" locale={localActive}>{t("Navbar.about")}</Link></li>
