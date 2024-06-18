@@ -1,3 +1,4 @@
+import ButtonUpPage from "./ButtonUpPage";
 import Navbar from "./Navbar";
 import { ReactNode } from "react";
 
@@ -10,6 +11,7 @@ export default function MainContent({ children }: MainContentProps) {
         <>
             <Navbar />
             <div>{children}</div>
+            <ButtonUpPage />
         </>
     );
 }

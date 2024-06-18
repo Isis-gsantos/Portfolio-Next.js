@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 85vh;
   }
 
   .about_me div {
@@ -42,5 +41,12 @@
     .about_me p {
       margin-top: 25px;
       max-width: 85%;
+      text-align: center;
+    }
+  }
+
+  @media(max-width: 500px) {
+    .profile {
+      max-width: 90%;
     }
   }

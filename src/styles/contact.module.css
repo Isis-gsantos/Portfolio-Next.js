@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 40px 0;
+    margin-top: 40px;
     gap: 30px;
 }
 
@@ -57,4 +57,10 @@
     font-size: 1.5em;
     margin-bottom: 20px;
     font-weight: 600;
+}
+
+@media(max-width: 790px) {
+    .contact article {
+        flex-direction: column;
+    }
 }

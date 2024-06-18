@@ -8,6 +8,7 @@
   font-family: "Saira", sans-serif;
   outline: none;
   border: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +22,7 @@ a {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2em;
   color: var(--secondary-text-color);
   text-transform: uppercase;
   transition: color 0.3s ease-in-out;
@@ -33,7 +34,7 @@ h2 {
 
 button {
   padding: 10px;
-  font-size: 14px;
+  font-size: 0.8em;
   border-radius: 20px;
   background-color: #8a8a8a;
   color: #fff;
