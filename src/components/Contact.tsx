@@ -16,6 +16,8 @@ export default function Contact() {
         message: ''
     });
 
+    const [emailMessage, setMessage] = useState('');
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({
@@ -35,11 +37,11 @@ export default function Contact() {
         )
         .then((response) => {
             console.log('SUCCESS!', response.status, response.text);
-            alert('Message sent successfully!');
+            setMessage(t("success-message"));
             setFormData({ from_name: '', reply_to: '', message: '' });
         }, (err) => {
             console.error('FAILED...', err);
-            alert('Failed to send message.');
+            setMessage(t("fail-message"));
         });
     };
 
@@ -82,6 +84,9 @@ export default function Contact() {
                         required
                     />
                     <button type="submit">Enviar</button>
+                    <span className={`${styles.message} ${emailMessage.includes('Failed') ? styles.error : ''}`}>
+                        {emailMessage}
+                    </span>
                 </form>
             </article>
         </section>

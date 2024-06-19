@@ -2,5 +2,7 @@
     "title": "Entre em contato comigo!",
     "name": "Nome",
     "message": "Mensagem",
-    "socials": "Redes Sociais"
+    "socials": "Redes Sociais",
+    "success-message": "E-mail enviado com sucesso!",
+    "fail-message": "Erro ao enviar E-mail."
 }

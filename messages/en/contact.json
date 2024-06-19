@@ -2,5 +2,7 @@
     "title": "Contact Me!",
     "name": "Name",
     "message": "Message",
-    "socials": "Socials Networks"
+    "socials": "Socials Networks",
+    "success-message": "E-mail sent successfully!",
+    "fail-message": "Failed to send message."
 }

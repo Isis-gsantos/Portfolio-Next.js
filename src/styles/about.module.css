@@ -49,4 +49,8 @@
     .profile {
       max-width: 90%;
     }
+
+    .about_me p {
+      max-width: 90%;
+    }
   }

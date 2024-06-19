@@ -15,8 +15,8 @@ export default function About() {
                 <p>
                     {t("description")} <br></br>
                     <span>
-                        <Link href="https://github.com/Isis-gsantos"><FaGithub /></Link>
-                        <Link href="https://www.linkedin.com/in/isis-goncalves-santos/"><FaLinkedin /></Link>
+                        <Link target="blank" href="https://github.com/Isis-gsantos"><FaGithub /></Link>
+                        <Link target="blank" href="https://www.linkedin.com/in/isis-goncalves-santos/"><FaLinkedin /></Link>
                     </span>
                 </p> 
             </div>
