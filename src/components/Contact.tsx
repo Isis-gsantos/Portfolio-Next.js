@@ -6,6 +6,7 @@ import styles from "@/styles/contact.module.css";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
+import FadeInSection from "./FadeInSection";
 
 export default function Contact() {
     const t = useTranslations("contact");
@@ -35,60 +36,64 @@ export default function Contact() {
             formData,
             process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
         )
-        .then((response) => {
-            console.log('SUCCESS!', response.status, response.text);
-            setMessage(t("success-message"));
-            setFormData({ from_name: '', reply_to: '', message: '' });
-        }, (err) => {
-            console.error('FAILED...', err);
-            setMessage(t("fail-message"));
-        });
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                setMessage(t("success-message"));
+                setFormData({ from_name: '', reply_to: '', message: '' });
+            }, (err) => {
+                console.error('FAILED...', err);
+                setMessage(t("fail-message"));
+            });
     };
 
     return (
         <section className={styles.contact}>
-            <h2>{t("title")}</h2>
+            <FadeInSection>
+                <h2>{t("title")}</h2>
+            </FadeInSection>
 
-            <article>
-                <ul className={styles.socials}>
-                    <h2>{t("socials")}</h2>
-                    <li><Link href="https://github.com/Isis-gsantos" target="_blank"><FaGithub /> Github</Link></li>
-                    <li><Link href="https://www.linkedin.com/in/isis-goncalves-santos/" target="_blank"><FaLinkedin /> Linkedin</Link></li>
-                    <li><CiMail /> isissantos8425@gmail.com</li>
-                </ul>
+            <FadeInSection>
+                <article>
+                    <ul className={styles.socials}>
+                        <h2>{t("socials")}</h2>
+                        <li><Link href="https://github.com/Isis-gsantos" target="_blank"><FaGithub /> Github</Link></li>
+                        <li><Link href="https://www.linkedin.com/in/isis-goncalves-santos/" target="_blank"><FaLinkedin /> Linkedin</Link></li>
+                        <li><CiMail /> isissantos8425@gmail.com</li>
+                    </ul>
 
-                <form onSubmit={handleSubmit} className={styles.contact_form}>
-                    <input
-                        type="text"
-                        name="from_name"
-                        placeholder={t("name")}
-                        value={formData.from_name}
-                        onChange={handleChange}
-                        required
-                    />
-                    <input
-                        type="email"
-                        name="reply_to"
-                        placeholder='E-mail'
-                        value={formData.reply_to}
-                        onChange={handleChange}
-                        required
-                    />
-                    <textarea
-                        name="message"
-                        placeholder={t("message")}
-                        maxLength={500}
-                        style={{ height: "180px", width: "300px" }}
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                    />
-                    <button type="submit">Enviar</button>
-                    <span className={`${styles.message} ${emailMessage.includes('Failed') ? styles.error : ''}`}>
-                        {emailMessage}
-                    </span>
-                </form>
-            </article>
+                    <form onSubmit={handleSubmit} className={styles.contact_form}>
+                        <input
+                            type="text"
+                            name="from_name"
+                            placeholder={t("name")}
+                            value={formData.from_name}
+                            onChange={handleChange}
+                            required
+                        />
+                        <input
+                            type="email"
+                            name="reply_to"
+                            placeholder='E-mail'
+                            value={formData.reply_to}
+                            onChange={handleChange}
+                            required
+                        />
+                        <textarea
+                            name="message"
+                            placeholder={t("message")}
+                            maxLength={500}
+                            style={{ height: "180px", width: "300px" }}
+                            value={formData.message}
+                            onChange={handleChange}
+                            required
+                        />
+                        <button type="submit">Enviar</button>
+                        <span className={`${styles.message} ${emailMessage.includes('Failed') ? styles.error : ''}`}>
+                            {emailMessage}
+                        </span>
+                    </form>
+                </article>
+            </FadeInSection>
         </section>
     );
 }

@@ -8,7 +8,7 @@ import MainContent from "@/components/MainContent";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Isis Santos - Portfolio",
   description: "Isis G Santos's Portfolio",
 };
 

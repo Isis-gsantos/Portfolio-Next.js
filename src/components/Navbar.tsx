@@ -28,11 +28,11 @@ export default function Navbar() {
                 <ThemeToggle />
 
                 <ul className={`${styles.navbarList} ${isActive ? styles.active : ''}`}>
-                    <li><Link href="/" locale={localActive}>Home</Link></li>
-                    <li><Link href="/about" locale={localActive}>{t("Navbar.about")}</Link></li>
-                    <li><Link href="/skills" locale={localActive}>Skills</Link></li>
-                    <li><Link href="/projects" locale={localActive}>{t("Navbar.projects")}</Link></li>
-                    <li><Link href="/contact" locale={localActive}>{t("Navbar.contact")}</Link></li>
+                    <li><Link href={`/${localActive}/`}>Home</Link></li>
+                    <li><Link href={`/${localActive}/about`}>{t("Navbar.about")}</Link></li>
+                    <li><Link href={`/${localActive}/skills`}>Skills</Link></li>
+                    <li><Link href={`/${localActive}/projects`}>{t("Navbar.projects")}</Link></li>
+                    <li><Link href={`/${localActive}/contact`}>{t("Navbar.contact")}</Link></li>
                 </ul>
 
                 <select onChange={onSelectChange} defaultValue={localActive} className={styles.languageSelect}>
